@@ -1,5 +1,8 @@
 import FAQs from "./faq";
 import MotionCarousel from "./carousel";
+import faqGeometry from "../images/faq-geometric.png";
+import insightImage from "../images/insight.jpg";
+import xeroxImage from "../images/xerox.jpg";
 
 export default function CompanyInfo() {
   return (
@@ -13,7 +16,7 @@ export default function CompanyInfo() {
       </div>
       <div className="relative bg-black pb-20 text-white">
         <div className="absolute right-0 bottom-0 h-full">
-          <img src="/faq-geometric.png" alt="FAQ Geometry" />
+          <img src={faqGeometry} alt="FAQ Geometry" />
         </div>
         <div className="container mx-auto mb-20 max-w-7xl px-4">
           <div className="mx-auto">
@@ -51,7 +54,7 @@ export default function CompanyInfo() {
                 <div className="col-span-2">
                   <img
                     className="mb-6 aspect-3/1 w-full rounded-[10px] object-cover"
-                    src="insight.jpg"
+                    src={insightImage}
                     alt="Insight"
                   />
                   <span className="font-ibm-plex-mono">15/06/2024</span>
@@ -62,7 +65,7 @@ export default function CompanyInfo() {
                 <div className="col-span-1">
                   <img
                     className="mb-6 aspect-3/2 w-full rounded-[10px] object-cover"
-                    src="xerox.jpg"
+                    src={xeroxImage}
                     alt="xerox"
                   />
                   <span className="font-ibm-plex-mono">15/06/2024</span>
@@ -74,7 +77,7 @@ export default function CompanyInfo() {
                 <div className="col-span-1">
                   <img
                     className="mb-6 aspect-3/2 w-full rounded-[10px] object-cover"
-                    src="insight.jpg"
+                    src={insightImage}
                     alt="Insight"
                   />
                   <span className="font-ibm-plex-mono">15/06/2024</span>

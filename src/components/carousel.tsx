@@ -1,12 +1,8 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import forestImage from "../images/forest-image.jpg";
 
-const images = [
-  "/forest-image.jpg",
-  "/forest-image.jpg",
-  "/forest-image.jpg",
-  "/forest-image.jpg",
-];
+const images = [forestImage, forestImage, forestImage, forestImage];
 
 export default function MotionCarousel() {
   const [index, setIndex] = useState(0);

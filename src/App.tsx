@@ -6,6 +6,8 @@ import CompanyInfo from "./components/company-info";
 import { Support } from "./components/support";
 import Footer from "./components/footer";
 import Geometry from "./components/geometry";
+import heroModem from "./images/hero-modem.png";
+import heroLaptop from "./images/hero-laptop.png";
 
 export default function App() {
   return (
@@ -47,7 +49,7 @@ function Hero() {
             <div className="absolute translate-x-[-65%] -translate-y-[10%]">
               <img
                 className="w-[120px] xl:w-full"
-                src="hero-modem.png"
+                src={heroModem}
                 alt="Hero Image"
               />
               <span className="absolute left-0 -z-10 block h-[52px] w-[180px] translate-x-[-18%] translate-y-[-50%] rounded-[50%] bg-[#0A151B] p-2 blur-xl xl:h-[82px] xl:w-[208px]"></span>
@@ -55,7 +57,7 @@ function Hero() {
             <div className="relative z-20">
               <img
                 className="h-[250px] xl:h-[347px]"
-                src="hero-laptop.png"
+                src={heroLaptop}
                 height=""
                 alt="Hero Image"
               />

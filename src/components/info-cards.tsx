@@ -1,26 +1,30 @@
 import { motion } from "framer-motion";
+import icon1 from "../images/icon-1.svg";
+import icon2 from "../images/icon-2.svg";
+import icon3 from "../images/icon-3.svg";
+import icon4 from "../images/icon-4.svg";
 
 const cardsArray = [
   {
-    icon: "icon-1.svg",
+    icon: icon1,
     title: "IT Services",
     description:
       "Recognising your frustrations with your print environment, IT services, document management & communications and finding a solution to overcome them.",
   },
   {
-    icon: "icon-2.svg",
+    icon: icon2,
     title: "Managed Print Services",
     description:
       "Recognising your frustrations with your print environment, IT services, document management & communications and finding a solution to overcome them.",
   },
   {
-    icon: "icon-3.svg",
+    icon: icon3,
     title: "Document Management",
     description:
       "Recognising your frustrations with your print environment, IT services, document management & communications and finding a solution to overcome them.",
   },
   {
-    icon: "icon-4.svg",
+    icon: icon4,
     title: "Communications",
     description:
       "Recognising your frustrations with your print environment, IT services, document management & communications and finding a solution to overcome them.",

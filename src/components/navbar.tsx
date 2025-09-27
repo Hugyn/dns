@@ -1,6 +1,6 @@
 import { useScroll, motion, useMotionValueEvent } from "motion/react";
 import { useState } from "react";
-
+import logo from "../images/logo.svg";
 export default function MyNavbar() {
   const { scrollY } = useScroll();
   const [scrolled, setScrolled] = useState(false);
@@ -25,7 +25,7 @@ export default function MyNavbar() {
             alt="Logo"
             animate={{ height: scrolled ? 60 : 80 }}
             className="h-14 w-auto md:h-20"
-            src="logo.svg"
+            src={logo}
           />
         </a>
         <div className="flex flex-1 flex-col justify-end md:justify-between">

@@ -1,31 +1,38 @@
+import calendar from "../images/support-icons/calendar.svg";
+import float from "../images/support-icons/float.svg";
+import hand from "../images/support-icons/hand.svg";
+import paper from "../images/support-icons/paper.svg";
+import bubble from "../images/support-icons/bubble.svg";
+import trophy from "../images/support-icons/trophy.svg";
+
 const supportItems = [
   {
-    icon: "/support-icons/calendar.svg",
+    icon: calendar,
     title: "business years",
     text: "Lorem ipsum dolor sit amet consectetur. Etiam sem netus tellus.",
   },
   {
-    icon: "/support-icons/float.svg",
+    icon: float,
     title: "On-site support",
     text: "Lorem ipsum dolor sit amet consectetur. Etiam sem netus tellus.",
   },
   {
-    icon: "/support-icons/hand.svg",
+    icon: hand,
     title: "Expert team members",
     text: "Lorem ipsum dolor sit amet consectetur. Etiam sem netus tellus.",
   },
   {
-    icon: "/support-icons/paper.svg",
+    icon: paper,
     title: "Live contracts",
     text: "Lorem ipsum dolor sit amet consectetur. Etiam sem netus tellus.",
   },
   {
-    icon: "/support-icons/bubble.svg",
+    icon: bubble,
     title: "Guided trainings",
     text: "Lorem ipsum dolor sit amet consectetur. Etiam sem netus tellus.",
   },
   {
-    icon: "/support-icons/trophy.svg",
+    icon: trophy,
     title: "Accreditations & awards",
     text: "Lorem ipsum dolor sit amet consectetur. Etiam sem netus tellus.",
   },

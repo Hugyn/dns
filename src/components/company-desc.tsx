@@ -1,9 +1,10 @@
+import companyImg from "../images/company-img.png";
 export default function CompanyDesc() {
   return (
     <section className="relative grid h-[651px] grid-cols-2 bg-[#C92C93] text-white">
       <div className="col-span-2 md:col-span-1">
         <img
-          src="company-img.png"
+          src={companyImg}
           alt="Company"
           className="h-[320px] w-full rounded-tr-xl rounded-br-xl object-cover md:h-full md:w-auto"
         />

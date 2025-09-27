@@ -19,6 +19,7 @@
     "@material-tailwind/react": "^3.0.0-beta.24",
     "daisyui": "^5.1.18",
     "flowbite-react": "^0.12.4",
+    "gh-pages": "^6.3.0",
     "motion": "^12.23.19",
     "react": "^19.1.0",
     "react-dom": "^19.1.0"
