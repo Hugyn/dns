@@ -1,4 +1,4 @@
-import { Button, Spinner } from "flowbite-react";
+import { Button } from "flowbite-react";
 import { FooterGeometry } from "./footer-geometry";
 import React from "react";
 
