@@ -4,7 +4,7 @@
 @source "../.flowbite-react/class-list.json";
 @plugin "daisyui";
 
-@font-face {
+/* @font-face {
   font-family: "Gilroy-Bold";
   font-style: normal;
   font-weight: normal;
@@ -47,7 +47,7 @@
   src:
     local("Gilroy-Regular"),
     url("/fonts/gilroy/Gilroy-Regular.woff") format("woff");
-}
+} */
 
 @theme {
   --font-sans: "Inter", sans-serif;
