@@ -2,7 +2,7 @@
   "name": "flowbite-react-template-vite",
   "private": true,
   "version": "0.0.0",
-  "home": "https://hugyn.github.io/dns/",
+  "home": "https://hugyn.github.io/dns-website/",
   "type": "module",
   "scripts": {
     "dev": "vite",

@@ -1,7 +1,18 @@
-import { Button } from "flowbite-react";
+import { Button, Spinner } from "flowbite-react";
 import { FooterGeometry } from "./footer-geometry";
+import React from "react";
 
 export default function Footer() {
+  const [loading, setLoading] = React.useState(false);
+  const [buttonState, setButtonState] = React.useState("Submit now");
+  const formSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+      setButtonState("Submitted!");
+    }, 2000);
+  };
   return (
     <footer id="contact" className="relative bg-[#FF3A7A] pt-28">
       <div className="absolute bottom-0 left-[-7%] h-[83%] w-auto">
@@ -25,34 +36,49 @@ export default function Footer() {
             </div>
           </div>
           <div className="col-span-2 flex justify-center md:col-span-1">
-            <form className="font-ibm-plex-mono max-w-[488px] space-y-7">
+            <form
+              onSubmit={formSubmit}
+              className="font-ibm-plex-mono max-w-[488px] space-y-7"
+            >
               <input
+                disabled={loading}
                 type="text"
                 placeholder="Name"
                 className="input h-[55px] w-full rounded-none border-white bg-transparent text-[16px] text-white placeholder-white focus:border-white focus:ring-0"
               />
               <input
+                disabled={loading}
                 type="text"
                 placeholder="Email"
                 className="input h-[55px] w-full rounded-none border-white bg-transparent text-[16px] text-white placeholder-white focus:border-white focus:ring-0"
               />
               <input
+                disabled={loading}
                 type="text"
                 placeholder="Telephone"
                 className="input h-[55px] w-full rounded-none border-white bg-transparent text-[16px] text-white placeholder-white focus:border-white focus:ring-0"
               />
               <input
+                disabled={loading}
                 type="text"
                 placeholder="Company"
                 className="input h-[55px] w-full rounded-none border-white bg-transparent text-[16px] text-white placeholder-white focus:border-white focus:ring-0"
               />
               <input
+                disabled={loading}
                 type="text"
                 placeholder="I need help with..."
                 className="input h-[55px] w-full rounded-none border-white bg-transparent text-[16px] text-white placeholder-white focus:border-white focus:ring-0"
               />
-              <Button className="btn font-ibm-plex-mono ml-auto h-[55px] rounded-none border-1 bg-white px-14 text-[#3C2A7D] shadow-none">
-                Submit now
+              <Button
+                type="submit"
+                className="btn font-ibm-plex-mono ml-auto h-[55px] rounded-none border-1 bg-white px-14 text-[#3C2A7D] shadow-none"
+              >
+                {loading ? (
+                  <span className="loading loading-spinner loading-xl"></span>
+                ) : (
+                  buttonState
+                )}
               </Button>
             </form>
           </div>
